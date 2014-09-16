@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    body { padding-top: 70px; }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Navigace</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">EMS</a>
+        </div>        
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Zaměstnanci</a></li>
+            <li><a href="#">Oddělení</a></li>
+            <li><a href="#">Výkaz práce</a></li>
+            <li><a href="#">Dovolené</a></li>
+            <li><a href="#">Projekty</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown">
+                Jana Novotná
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="Prihlaseni">
+                <li><a href="#">Nastavení</a></li>
+                <li><a href="#">Odhlásit</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>      
+    </div>  
+
+    <div class="container">
+      
+      <div class="page-header">
+        <h1>Jana Novotná <small>(IT oddělení)</small></h1>
+      </div>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#osobni" data-toggle="tab">Osobní údaje</a></li>
+        <li><a href="#vykaz" data-toggle="tab">Výkaz práce</a></li>
+        <li><a href="#dovolene" data-toggle="tab">Dovolené</a></li>
+        <li><a href="#projety" data-toggle="tab">Projekty</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="osobni">
+
+          <div class="row">
+          
+          <form action="" class="form form-horizontal col-sm-8 col-sm-offset-2">
+              
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <label for="" class="control-label">
+                    Jméno
+                  </label>
+                </div>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <label for="" class="control-label">
+                    Příjmení
+                  </label>
+                </div>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control">
+                </div>
+              </div>  
+
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <label for="" class="control-label">
+                    Oddělení
+                  </label>
+                </div>
+                <div class="col-sm-4">
+                  <select name="" id="" class="form-control">
+                    <option value="">IT</option>
+                    <option value="">Management</option>
+                    <option value="">Sales</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <label for="" class="control-label">
+                    Pohlaví
+                  </label>
+                </div>
+                <div class="col-sm-4">
+                  <label class="radio">
+                   <input type="radio" name="pohlavi"> Muž 
+                  </label> 
+                  <label class="radio"> 
+                   <input type="radio" name="pohlavi"> Žena
+                  </label>
+                </div>
+              </div>      
+
+              <div class="form-group">
+                <div class="col-sm-4 col-sm-offset-4">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Uložit</button>
+                </div>
+              </div>                                    
+
+
+          </form>
+
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="vykaz">
+          Výkaz práce...
+        </div>
+        <div class="tab-pane fade" id="dovolene">
+          Dovolené...
+        </div>
+        <div class="tab-pane fade" id="projety">
+          Projekty...
+        </div>
+      </div>      
+
+    </div><!-- .container -->
+
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

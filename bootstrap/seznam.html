@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    body { padding-top: 70px; }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Navigace</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">EMS</a>
+        </div>        
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Zaměstnanci</a></li>
+            <li><a href="#">Oddělení</a></li>
+            <li><a href="#">Výkaz práce</a></li>
+            <li><a href="#">Dovolené</a></li>
+            <li><a href="#">Projekty</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown">
+                Jana Novotná
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="Prihlaseni">
+                <li><a href="#">Nastavení</a></li>
+                <li><a href="#">Odhlásit</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>      
+    </div>  
+
+    <div class="container">
+      
+      <div class="page-header">
+        <h1>Zaměstnanci</h1>
+      </div>
+
+      <!--
+
+      <div class="row">
+        <div class="col-xs-6" style="border: 1px solid red;">.col-xs-6</div>
+        <div class="col-xs-6" style="border: 1px solid red;">.col-xs-6</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4" style="border: 1px solid red;">.col-md-4</div>
+        <div class="col-md-4" style="border: 1px solid red;">.col-md-4</div>
+        <div class="col-md-4" style="border: 1px solid red;">.col-md-4</div>
+      </div>  
+
+
+
+      <div class="row">
+        <div class="col-xs-6 col-md-3" style="border: 1px solid red;">col-xs-6.col-md-3</div>
+        <div class="col-xs-6 col-md-3" style="border: 1px solid red;">col-xs-6.col-md-3</div>
+        <div class="clearfix hidden-md hidden-lg"></div>
+        <div class="col-xs-6 col-md-3" style="border: 1px solid red;">col-xs-6.col-md-3<br>bug</div>
+        <div class="col-xs-6 col-md-3" style="border: 1px solid red;">col-xs-6.col-md-3</div>
+        <div class="clearfix"></div>
+        <div class="col-xs-6 col-md-3" style="border: 1px solid red;">col-xs-6.col-md-3</div>
+        <div class="col-xs-6 col-md-3" style="border: 1px solid red;">col-xs-6.col-md-3</div>
+        <div class="clearfix hidden-md hidden-lg"></div>
+        <div class="col-xs-6 col-md-3" style="border: 1px solid red;">col-xs-6.col-md-3</div>
+        <div class="col-xs-6 col-md-3" style="border: 1px solid red;">col-xs-6.col-md-3</div>
+        <div class="clearfix"></div>
+      </div>
+
+      -->  
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <p class="input-group input-group-lg">
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Najít</button>
+            </span>
+          </p><!-- /input-group -->
+        </div>
+
+        <div class="col-md-2 col-md-offset-4"> 
+
+          <div class="dropdown pull-right">
+            <a data-toggle="dropdown" href="#" class="btn btn-primary">
+              Akce
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li><a href="#">Povolit dovolenou</a></li>
+              <li><a href="#">Povolit hospodu</a></li>
+            </ul>
+          </div>           
+
+        </div>
+
+        <div class="col-md-2">  
+          
+          <p class="pull-right">
+            <button class="btn btn-default">
+              <span class="glyphicon glyphicon-plus"></span>
+              Přidat zaměstnance          
+            </button>
+          </p>           
+
+        </div><!-- .col-md-1 -->     
+
+      </div><!-- .row -->     
+
+
+     
+
+      <table class="table table-hover">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Jméno</th>
+          <th>Příjmení</th>
+          <th>Oddělení</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Mark</td>
+          <td><a href="#">Otto</a></td>
+          <td>Sales</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Jacob</td>
+          <td><a href="#">Thornton</a></td>
+          <td>IT</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Jana</td>
+          <td><a href="#">Novotná</a></td>
+          <td>HR</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Mark</td>
+          <td><a href="#">Otto</a></td>
+          <td>Sales</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Jacob</td>
+          <td><a href="#">Thornton</a></td>
+          <td>IT</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Jana</td>
+          <td><a href="#">Novotná</a></td>
+          <td>HR</td>
+        </tr>  
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Mark</td>
+          <td><a href="#">Otto</a></td>
+          <td>Sales</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Jacob</td>
+          <td><a href="#">Thornton</a></td>
+          <td>IT</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Jana</td>
+          <td><a href="#">Novotná</a></td>
+          <td>HR</td>
+        </tr>  
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Mark</td>
+          <td><a href="#">Otto</a></td>
+          <td>Sales</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Jacob</td>
+          <td><a href="#">Thornton</a></td>
+          <td>IT</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>Jana</td>
+          <td><a href="#">Novotná</a></td>
+          <td>HR</td>
+        </tr>                        
+      </tbody>
+    </table>
+
+    <div class="text-center block-center">
+
+      <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>
+
+    </div>
+
+    </div>
+
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
