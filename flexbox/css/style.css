@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+.container {
+  background: red;
+  height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.head {
+  height: 10em;
+  background: lightgreen;
+}
+.foot {
+  height: 5em;
+  background: lightgreen;
+}
+.main {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.side {
+  background: darkgreen;
+  min-width: 10em;
+  max-width: 30em;
+  width: 30%;
+}
+.body {
+  background: white;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.no-flexbox .side {
+  float: left;
+  min-width: auto;
+  max-width: auto;
+}
+.no-flexbox .body {
+  float: right;
+  width: 70%;
+}
+/*# sourceMappingURL=style.css.map */
