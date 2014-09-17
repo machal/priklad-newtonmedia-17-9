@@ -14,6 +14,10 @@
 
 // Base
 .polaroid {
+	.border-radius(10%);
+	.box-shadow(5px 5px 5px 0 rgba(0,0,0,.5));
+	background-color: #fff;
+	.background-image(linear-gradient(15deg, #fff, #ccc));
 	a {
 	  color: #666;
 	  text-decoration: none;
@@ -40,10 +44,12 @@
 // Stavy
 .polaroid {
 	background-color: rgba(100%, 100%, 100%, .7);
+	.transition(all 200ms);			
 	
 	&:hover,
 	&:focus,
 	&:active {
+		.scale(1.1);
 	  	background-color: #fcf883;
 		background-color: rgba(100%, 100%, 100%, 1);	
 	}
